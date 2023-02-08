@@ -1,5 +1,6 @@
 #import "SSTSmallStrings.h"
 #import <compression.h>
+#import "NSBundle+Localized.h"
 
 static NSDictionary <NSString *, NSString *> *sKeyToString = nil;
 
