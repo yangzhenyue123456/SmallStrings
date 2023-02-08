@@ -11,12 +11,13 @@ Pod::Spec.new do |s|
 
   s.source_files = [
     'Source/*.{m,h}',
+        'compress',
+    'localize.rb',
+    'localize.sh',
   ]
 
   s.preserve_paths = [
-    'compress',
-    'localize.rb',
-    'localize.sh',
+
   ]
 
   # Ensure the run script and upload-symbols are callable via
