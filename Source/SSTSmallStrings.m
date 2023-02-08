@@ -58,5 +58,7 @@ NSString *SSTStringForKey(NSString *key)
     });
     // Haven't tested with CFBundleAllowMixedLocalizations set to YES, although it seems like that'd be handled by the
     // NSLocalizedString fallback
-    return sKeyToString[key] ?: NSLocalizedString(key, @"");
+//     return sKeyToString[key] ?: NSLocalizedString(key, @"");
++    return sKeyToString[key] ?: [NSBundle.mainBundle bl_localizedStringForKey:key value:@"" table:nil];
+
 }
