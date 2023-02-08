@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
 
   s.source_files = [
     'Source/*.{m,h}',
+        'compress.m',
         'compress',
     'localize.rb',
     'localize.sh',
