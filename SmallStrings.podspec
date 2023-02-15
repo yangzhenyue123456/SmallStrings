@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
   ]
 
   # Ensure the run script and upload-symbols are callable via
-  s.prepare_command = <<-PREPARE_COMMAND_END
-    clang -O3 compress.m -framework Foundation -lcompression -o compress
-  PREPARE_COMMAND_END
+#   s.prepare_command = <<-PREPARE_COMMAND_END
+#     clang -O3 compress.m -framework Foundation -lcompression -o compress
+#   PREPARE_COMMAND_END
 
   s.libraries = 'compression'
 end
