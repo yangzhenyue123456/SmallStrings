@@ -37,7 +37,7 @@ def write_compressed(out, str)
   Tempfile.create('localization_values') do |file|
     file.write(str)
     file.close
-    sh("./compress #{file.path} #{out}")
+    sh("${PODS_ROOT}/SmallStrings/compress #{file.path} #{out}")
   end
 end
 
